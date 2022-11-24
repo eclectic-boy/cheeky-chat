@@ -8,9 +8,21 @@ Based on the tutorial https://channels.readthedocs.io/en/stable/tutorial/part_1.
 
 Make sure you have Python3 installed and Docker.
 
-Clone the repo, change to the root of the project and create a Python 3 virtualenv:
+Clone the repo and change to the root of the project:
+```bash
+git clone git@github.com:eclectic-boy/cheeky-chat.git
+cd cheeky-chat
+```
+
+Create a Python 3 virtual environment and activate it:
 ```bash
 python -m virtualenv .venv -p python3.11
+source .venv/bin/activate
+```
+
+Install the requirements:
+```bash
+pip install -r requirements.txt
 ```
 
 Start your Redis Docker container:
